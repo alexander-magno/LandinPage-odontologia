@@ -1,0 +1,665 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 2%;
+    margin: 0 auto;
+
+}
+
+.clear{
+    clear: both;
+}
+
+html, body {
+    height: 100%;
+}
+
+/*Configurações do plugin slick Inicio*/
+
+.slick-dotted ul {
+    list-style: none;
+    text-align: center;
+    position: relative;
+    margin-top: 50px;
+}
+
+.slick-dotted li {
+    display: inline-block;
+    margin: 0 7px;
+
+}
+
+.slick-dotted button:focus{
+    outline: 0;
+}
+
+.slick-dotted li button{
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    color: #d8d8d8;
+    border-width: 0;
+    background: #d8d8d8;
+    opacity: 1;
+    cursor: pointer;
+}
+
+li.slick-active button{
+    background: #33A69A;
+    color: #33A69A;
+}
+
+.slick-slide:focus{
+    outline: none;
+}
+
+/*Configurações do plugin slick Fim*/
+
+/*COnfigurações gerais*/
+/*******************************************************/
+/*Header Inicio*/
+header .logo img {
+    float: left;
+    width: 100%;
+    max-width: 150px;
+}
+
+.menu-mobile {
+    display: none;
+    float: right;
+    margin-right: 30px;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    background-image: url('../img/botao-de-menu-de-tres-linhas-horizontais.png');
+    background-size: 100% 100%;
+    background-color: #33A69A;
+    margin-top: 60px;
+}
+
+nav.menu-mobile ul{
+    display: none;
+    z-index: 999;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 140px;
+    left: 0;
+    background-color: white;
+
+}
+nav.menu-mobile ul li {
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+nav.menu-mobile ul li:hover {
+    background-color: #A7D9D9;
+}
+
+header nav.menu-desktop {
+    float: right;
+    padding: 60px 2%;
+}
+
+header nav.menu-desktop ul{
+    list-style: none;
+}
+header nav.menu-desktop ul li {
+    float: left;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 0 20px;
+}
+
+header nav ul li a {
+    color: #33A69A;
+    text-decoration: none;
+}
+
+header nav.menu-desktop ul li:hover {
+    background-color: #33a69b6e;
+    transition: 0.3s;
+}
+
+/*Header Fim*/
+
+/*******************************************************/
+
+/*Section Mosaico Inicio*/
+
+.mosaico-single {
+    float: left;
+    width: calc(100% / 6);
+}
+
+.img-mosaico-single{
+    width: 100%;
+    padding-top: 100%;
+    background-color: #33A69A;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border: 5px solid white;
+}
+
+
+
+/*Section Mosaico Fim*/
+
+/*******************************************************/
+
+/*Section Servicos Inicio*/
+
+section.servicos .container {
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    left: 0;
+    top: -40px;
+}
+
+section.servicos .container .box-servicos {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-image: url('../img/dente.png');
+    background-size: 18px 18px;
+    background-position: center calc(100% - 5px);
+    background-repeat: no-repeat;
+}
+
+section.servicos .container .box-servicos h2 {
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+section.servicos .container .box-servicos p {
+    color: white;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+section.servicos .container .box-servicos:nth-of-type(1){
+    width: 30%;
+    padding: 30px 0;
+    background-color: #A7D9D9;
+}
+
+section.servicos .container .box-servicos:nth-of-type(2){
+    width: 40%;
+    padding: 60px 0;
+    background-color: #33A69A;
+    border-radius: 10px;
+    background-image: none;
+}
+
+section.servicos .container .box-servicos:nth-of-type(3){
+    width: 30%;
+    padding: 30px 0;
+    background-color: #A7D9D9;
+}
+
+
+
+
+/*Section Servicos Fim*/
+
+/*Section Perfil Inicio*/
+
+section.perfil-container {
+    padding: 40px 0;
+}
+
+section.perfil-container .perfil-wraper{
+    padding-top: 60%;
+    position: relative;
+}
+
+section.perfil-container .container {
+    max-width: 800px;
+}
+
+section.perfil-container .perfil-wraper2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    
+}
+
+section.perfil-container .perfil-img {
+    width: 50%;
+    height: 100%;
+    background-image: url('../img/dentista.jpg');
+    
+    background-size: 100% 100%;
+    
+}
+
+section.perfil-container .texto-perfil{
+    width: 50%;
+    padding: 0 30px;
+}
+section.perfil-container .texto-perfil h2 {
+    color: #33A69A;
+    font-size: 18px;
+}
+section.perfil-container .texto-perfil p {
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+/*Section Perfil Fim*/
+
+/*Section Video Inicio*/
+
+section.videos {
+    padding: 50px 2%;
+    
+}
+
+section.videos .box-video {
+    float: left;
+    width: 33.3%;
+    border: 5px solid white;
+    position: relative;
+    padding-top: calc(33.3% * 0.6);
+}
+
+.box-video iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*Section Video Fim*/
+
+/*Section tratamentos Inicio*/
+
+section.tratamentos h2 {
+    color: #33A69A;
+    text-align: center;
+}
+
+section.tratamentos .tratamentos-container {
+    float: left;
+    width: 33.3%;
+    
+}
+
+section.tratamentos .container {
+    padding: 50px 4%;
+}
+
+.tratamentos-single {
+    padding: 20px;
+}
+
+.tratamentos-single h2 {
+    font-size: 18px;
+    color: #33A69A;
+    text-align: center;
+}
+
+.tratamentos-single p {
+    font-size: 14px;
+}
+
+/*Section tratamentos FIm*/
+
+
+/*Section depoimentos Inicio*/
+
+section.depoimentos h2 {
+    color: #33A69A;
+    text-align: center;
+    margin-top: 50px;
+}
+section.depoimentos .container {
+    padding: 50px 0;
+    max-width: 400px;
+}
+.depoimento-single {
+    text-align: center;
+}
+
+.depoimento-single p {
+    text-align: center;
+    font-size: 14px;
+    color: #4b4b4b;
+}
+
+.nome-depoimento {
+    padding: 20px 0;
+}
+.nome-depoimento span {
+    position: relative;
+    top: 14px;
+    padding: 0 5px;
+    color: #4b4b4b;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.nome-depoimento img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+
+}
+
+/*Section depoimentos Fim*/
+
+
+/*Section social Inicio*/
+
+.instagram-chamada {
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 40px 2%;
+    background-color: #33A69A;
+}
+.instagram-chamada img {
+    width: 30px;
+    height: 30px;
+    
+}
+
+.instagram-chamada p {
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+.mosaico-social {
+    float: left;
+    width: 100%;
+}
+
+.mosaico-img-social {
+    float: left;
+    width: calc(100% / 9);
+    background-color: #A7D9D9;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-top: calc(100% / 9);
+    border: 5px solid white;
+}
+
+.facebook-chamada {
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+    background-color: #33A69A;
+}
+.facebook-chamada img {
+    width: 30px;
+    height: 30px;
+    
+}
+
+.facebook-chamada p {
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+/*Section social Fim*/
+
+
+/*Section contato inicio*/
+
+.contato {
+    padding: 60px 2%;
+}
+.contato h2 {
+    color: #33A69A;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.contato form {
+    width: 100%;
+    margin: 30px auto;
+    max-width: 500px;
+}
+
+.form-wraper {
+    float: left;
+    margin-top: 10px;
+    padding: 0 10px;
+}
+
+.form-wraper span {
+    font-size: 18px;
+    color: #33A69A;
+}
+
+.form-wraper input[type=text], input[type=email], input[type=tel] {
+    width: 100%;
+    height: 35px;
+    padding-left: 9px;
+}
+
+.form-wraper input[type=submit]{
+    width: 120px;
+    height: 45px;
+    cursor: pointer;
+    background-color: #33A69A;
+    color: white;
+    margin-top: 8px;
+    border: 0;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    -ms-transform: translate(-50%);
+}
+.form-wraper input[type=submit]:hover{
+    background-color: #3fb4b4;
+    transition: 0.3s;
+}
+
+.w100 {
+    width: 100%;
+}
+.w50 {
+    width: 50%;
+}
+
+.form-wraper textarea {
+    width: 100%;
+    height: 121px;
+    padding: 15px;
+    resize: none;
+}
+
+/*Section contato fim*/
+
+
+
+/*Footer Inicio*/
+
+footer {
+    background-color: #33A69A;
+    padding: 40px 2%;
+    text-align: center;
+}
+
+footer .container {
+    max-width: 900px;
+}
+
+.footer-block{
+    float: left;
+    width: 33.3%;
+}
+
+.footer-block h2 {
+    color: white;
+    font-size: 18px;
+}
+.footer-block p {
+    color: white;
+    margin-top: 8px;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.footer2 {
+    background-color: #33A69A;
+    border-top: 1px solid black;
+}
+
+.footer2 .logo-dev {
+    text-align: center;
+}
+.footer2 .logo-dev img {
+    width: 115px;
+    height: 115px;
+}
+/*Footer fim*/
+
+
+
+
+/*Medias query*/
+
+@media screen and (max-width: 1024px){
+    .mosaico-img-social {
+        width: calc(100% / 6);
+        padding-top: calc(100% / 6);
+        
+    }
+    .mosaico-social div:nth-of-type(1n + 7) {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+
+    nav.menu-desktop {
+        display: none;
+    }
+
+    nav.menu-mobile {
+        display: block;
+    }
+
+    section.servicos .container {
+        max-width: 800px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        left: 0;
+        top: 0;
+        flex-direction: column;
+    }
+
+    section.servicos .container .box-servicos:nth-of-type(1){
+        width: 90%;
+        padding: 30px 0;
+    }
+    
+    section.servicos .container .box-servicos:nth-of-type(2){
+        width: 94%;
+        padding: 60px 0;
+        background-image: none;
+    }
+    
+    section.servicos .container .box-servicos:nth-of-type(3){
+        width: 90%;
+        padding: 30px 0;
+    }
+
+    section.perfil-container .perfil-wraper{
+        padding-top: 0;
+    }
+
+    section.perfil-container .perfil-wraper2{
+        height: auto;
+        position: static;
+        align-items: center;
+        display: inline-block;
+        text-align: center;
+        
+    }
+    section.perfil-container .perfil-img {
+        width: 50%;
+        padding-top: 100%;
+        height: auto;
+        display: inline-block;
+        
+        
+    }
+    
+    section.perfil-container .texto-perfil{
+        width: 100%;
+        text-align: justify;
+        padding: 0 30px;
+    }
+
+    section.videos {
+        text-align: center;
+        
+    }
+
+    section.videos .box-video {
+        float: none;
+        display: inline-block;
+        width: 70%;
+        /*border: 5px solid white;*/
+        position: relative;
+        padding-top: calc(70% * 0.6);
+    }
+
+    .mosaico-img-social {
+        width: calc(100% / 3);
+        padding-top: calc(100% / 3);
+        
+    }
+    .mosaico-social div:nth-of-type(1n + 4) {
+        display: none;
+    }
+
+    .footer-block{
+        float: none;
+        width: 100%;
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width:580px) {
+    section.perfil-container .perfil-img {
+        width: 70%;
+        padding-top: 110%;
+        
+    }
+
+    .w50 {
+        width: 100%;
+    }
+    section.depoimentos .container{
+        max-width: 300px;
+    }
+    .tratamentos-single p{
+        font-size: 10px;
+    }
+    section.perfil-container .perfil-img{
+        padding-top: 90%;
+    }
+}
+
